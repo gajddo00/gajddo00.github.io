@@ -11,7 +11,7 @@ import { useEffect } from 'react';
 function App({ Component, pageProps }: AppProps) {
 
   useEffect(() => {
-    document.requestStorageAccess().then(
+    document.requestStorageAccess && document.requestStorageAccess().then(
       () => { console.log('access granted') },
       () => { console.log('access denied') }
     );
