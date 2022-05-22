@@ -675,6 +675,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_toastify__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_toastify__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _middleware_persist_login__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(8540);
 /* harmony import */ var _middleware_sse_layer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(5508);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(6689);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
 var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_middleware_sse_layer__WEBPACK_IMPORTED_MODULE_6__]);
 _middleware_sse_layer__WEBPACK_IMPORTED_MODULE_6__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
 
@@ -685,7 +687,15 @@ _middleware_sse_layer__WEBPACK_IMPORTED_MODULE_6__ = (__webpack_async_dependenci
 
 
 
+
 function App({ Component , pageProps  }) {
+    (0,react__WEBPACK_IMPORTED_MODULE_7__.useEffect)(()=>{
+        document.requestStorageAccess().then(()=>{
+            console.log("access granted");
+        }, ()=>{
+            console.log("access denied");
+        });
+    }, []);
     return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_context_AppContext__WEBPACK_IMPORTED_MODULE_3__/* .AppProvider */ .w, {
         children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components_common_layout__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z, {
             children: [

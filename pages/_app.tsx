@@ -6,13 +6,16 @@ import { AppProvider } from '../context/AppContext'
 import { ToastContainer } from 'react-toastify';
 import PersistLogin from '../middleware/persist-login';
 import SSELayer from '../middleware/sse-layer';
+import { useEffect } from 'react';
 
 function App({ Component, pageProps }: AppProps) {
 
-  document.requestStorageAccess().then(
-    () => { console.log('access granted') },
-    () => { console.log('access denied') }
-  );
+  useEffect(() => {
+    document.requestStorageAccess().then(
+      () => { console.log('access granted') },
+      () => { console.log('access denied') }
+    );
+  }, [])
 
   return (
     <AppProvider>
