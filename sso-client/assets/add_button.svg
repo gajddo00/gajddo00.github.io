@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Combined Shape</title>
+    <g id="WEB-SERVICE-OWNER" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Services-Tab-Active" transform="translate(-704.000000, -19.000000)" fill="#262626">
+            <g id="Add-service" transform="translate(615.000000, 19.000000)">
+                <g id="Add-button" transform="translate(89.000000, 0.000000)">
+                    <path d="M10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 Z M11,6 L9,6 L9,9 L6,9 L6,11 L9,11 L9,14 L11,14 L11,11 L14,11 L14,9 L11,8.999 L11,6 Z" id="Combined-Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
