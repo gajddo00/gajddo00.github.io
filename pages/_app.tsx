@@ -9,6 +9,11 @@ import SSELayer from '../middleware/sse-layer';
 
 function App({ Component, pageProps }: AppProps) {
 
+  document.requestStorageAccess().then(
+    () => { console.log('access granted') },
+    () => { console.log('access denied') }
+  );
+
   return (
     <AppProvider>
       <Layout>
